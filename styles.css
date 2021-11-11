@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 15px;
+}
+
+body{
+  height: 100vh;
+  background: 	#090b1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  width: 375px;
+  height: 90%;
+  background: #1b1938;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Inter';
+  cursor: pointer;
+}
+
+.img-sec{
+  height: 32%;
+  width: 100%;
+  background: linear-gradient(	#4f0080, rgba(255,255, 255,0)), url('images/image-header-mobile.jpg');
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/*.info{
+  color: white;
+}*/
+
+h2{
+  font-size: 2rem;
+  color: white;
+  padding: 2rem 1rem;
+  letter-spacing: -1px;
+}
+
+h2 span{
+  color: 	#aa5cdb;
+
+}
+
+.main-paragraph{
+  font-size: 1rem;
+  padding: 0 3.5rem;
+  color: 	#ffffff;
+}
+
+.overview{
+  padding: 1.5rem;
+}
+
+.overview span{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.overview p{
+  font-size: 8px;
+  font-weight: bold;
+  color: 	#fafafa;
+}
+
+@media (min-width: 1440px) {
+  .card{
+    height: 25rem;
+    width: 60rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .img-sec{
+    background: linear-gradient(	#4f0080, rgba(255,255, 255,0)), url('images/image-header-desktop.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0;
+  }
+
+  .info{
+    text-align: left;
+  }
+
+  h2{
+    padding: 2rem 3rem;
+  }
+
+  .overviews{
+    margin: 2rem;
+  }
+
+  .overview{
+    display: inline-block;
+  }
+
+  .overview p{
+    font-size: 1rem;
+  }
+}
